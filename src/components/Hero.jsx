@@ -1,0 +1,92 @@
+import { motion } from 'framer-motion'
+import GradientButton from './ui/GradientButton'
+import GithubIcon from '../assets/svgs/github.svg'
+import LinkedinIcon from '../assets/svgs/linkedin.svg'
+import MediumIcon from '../assets/svgs/medium.svg'
+import WebsiteIcon from '../assets/svgs/website.svg'
+
+const socialLinks = [
+  { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/' },
+  { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+  { icon: MediumIcon, label: 'Medium', href: 'https://medium.com/' },
+  { icon: WebsiteIcon, label: 'Website', href: '#' },
+]
+
+function Hero() {
+  return (
+    <section id="home" className="relative overflow-hidden section-wrap">
+      <motion.div
+        className="pointer-events-none absolute -left-20 top-28 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl"
+        animate={{ y: [0, -18, 0], x: [0, 10, 0] }}
+        transition={{ duration: 8, repeat: Infinity }}
+      />
+      <motion.div
+        className="pointer-events-none absolute -right-20 top-16 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl"
+        animate={{ y: [0, 16, 0], x: [0, -12, 0] }}
+        transition={{ duration: 7, repeat: Infinity }}
+      />
+
+      <div className="container-pad relative">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-cyan-300/80">
+            Software Engineer Portfolio
+          </p>
+          <h1 className="font-display text-4xl font-extrabold leading-tight text-white sm:text-6xl">
+            <span className="gradient-text">Salinda Yasas</span>
+            <br />
+            <span className="text-2xl font-semibold text-slate-200 sm:text-3xl">
+              Software Engineer
+            </span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">
+            Highly motivated Software Engineer passionate about building scalable web
+            applications and learning new technologies. I enjoy solving real-world
+            problems through clean, efficient code and modern software architecture.
+          </p>
+
+          <ul className="mt-6 space-y-2 text-sm text-slate-300">
+            <li>
+              Experience with ASP.NET Core, Spring Boot, and modern JavaScript
+              frameworks
+            </li>
+            <li>Backend development, full-stack development, and cloud services</li>
+            <li>
+              Graduate of B.Sc. (Hons) in Information Technology - University of
+              Moratuwa
+            </li>
+          </ul>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <GradientButton href="#projects">View My Projects</GradientButton>
+            <GradientButton href="#contact" variant="secondary">
+              Contact Me
+            </GradientButton>
+          </div>
+
+          <div className="mt-8 flex items-center justify-center gap-3">
+            {socialLinks.map((item) => (
+              <motion.a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{ y: -4 }}
+                className="glass-panel flex h-11 w-11 items-center justify-center rounded-xl"
+                aria-label={item.label}
+              >
+                <img src={item.icon} alt={`${item.label} icon`} className="h-5 w-5" />
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero
