@@ -7,10 +7,10 @@ import PhoneIcon from '../assets/svgs/phone.svg'
 import LocationIcon from '../assets/svgs/location.svg'
 
 const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com/', icon: GithubIcon },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: LinkedinIcon },
-  { label: 'Medium', href: 'https://medium.com/', icon: MediumIcon },
-  { label: 'Personal Website', href: '#', icon: WebsiteIcon },
+  { label: 'GitHub', href: 'https://github.com/salinda-yasas-99', icon: GithubIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/salinda-yasas-813716216/', icon: LinkedinIcon },
+  // { label: 'Medium', href: 'https://medium.com/', icon: MediumIcon },
+  { label: 'Personal Website', href: 'https://salinda-yasas.web.app/', icon: WebsiteIcon },
 ]
 
 const quickLinks = [
