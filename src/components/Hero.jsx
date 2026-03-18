@@ -7,7 +7,7 @@ import WebsiteIcon from '../assets/svgs/website.svg'
 
 const socialLinks = [
   { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/salinda-yasas-99' },
-  { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/salinda-yasas-813716216/' }
+  { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/salinda-yasas-813716216/' },
   { icon: WebsiteIcon, label: 'Website', href: 'https://salinda-yasas.web.app/' },
 ]
 
