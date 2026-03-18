@@ -40,7 +40,7 @@ function Hero() {
               Software Engineer
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed !text-white/80 sm:text-base">
             Highly motivated Software Engineer passionate about building scalable web
             applications and learning new technologies. I enjoy solving real-world
             problems through clean, efficient code and modern software architecture.
