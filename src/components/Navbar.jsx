@@ -50,7 +50,7 @@ function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          {/* Resume download – visible on md+ */}
+        
           <a
             href="https://drive.google.com/file/d/1US_z2bLG_ku5vFsw2013mOyqLyfnaVCz/preview"
             target="_blank"

@@ -6,10 +6,9 @@ import MediumIcon from '../assets/svgs/medium.svg'
 import WebsiteIcon from '../assets/svgs/website.svg'
 
 const socialLinks = [
-  { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/' },
-  { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-  { icon: MediumIcon, label: 'Medium', href: 'https://medium.com/' },
-  { icon: WebsiteIcon, label: 'Website', href: '#' },
+  { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/salinda-yasas-99' },
+  { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/salinda-yasas-813716216/' }
+  { icon: WebsiteIcon, label: 'Website', href: 'https://salinda-yasas.web.app/' },
 ]
 
 function Hero() {
@@ -41,7 +40,7 @@ function Hero() {
               Software Engineer
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white sm:text-base">
             Highly motivated Software Engineer passionate about building scalable web
             applications and learning new technologies. I enjoy solving real-world
             problems through clean, efficient code and modern software architecture.
