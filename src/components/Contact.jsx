@@ -48,8 +48,8 @@ function Contact() {
                 >
                   <img src={item.icon} alt={`${item.label} icon`} className="h-5 w-5" />
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{item.label}</p>
-                    <p className="text-sm text-slate-200">{item.value}</p>
+                    <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-300">{item.label}</p>
+                    <p className="text-base text-slate-100">{item.value}</p>
                   </div>
                 </a>
               ))}
@@ -67,21 +67,21 @@ function Contact() {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2.5 text-base text-slate-100 outline-none transition placeholder:text-slate-300 focus:border-cyan-400/50"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2.5 text-base text-slate-100 outline-none transition placeholder:text-slate-300 focus:border-cyan-400/50"
             />
             <textarea
               rows="5"
               placeholder="Your Message"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2.5 text-base text-slate-100 outline-none transition placeholder:text-slate-300 focus:border-cyan-400/50"
             />
             <button
               type="button"
-              className="w-full rounded-xl bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:shadow-[0_0_26px_rgba(59,130,246,0.35)]"
+              className="w-full rounded-xl bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 px-4 py-2.5 text-base font-semibold text-white transition hover:shadow-[0_0_26px_rgba(59,130,246,0.35)]"
             >
               Send Message
             </button>

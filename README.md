@@ -1,16 +1,106 @@
-# React + Vite
+# Portfolio Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+It showcases professional experience, education, skills, projects, and contact information in a clean single-page layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React 19
+- Vite 8
+- Tailwind CSS
+- Framer Motion
+- ESLint
+- Firebase Hosting (for deployment)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
+```text
+portfolio/
+|- public/
+|- src/
+|  |- assets/
+|  |- components/
+|  |  |- ui/
+|  |- data/
+|  |- App.jsx
+|  |- main.jsx
+|- index.html
+|- tailwind.config.js
+|- postcss.config.js
+|- vite.config.js
+|- firebase.json
+|- package.json
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended)
+
+### Installation
+
+```bash
+pnpm install
+```
+
+### Run in Development
+
+```bash
+pnpm dev
+```
+
+The app runs on the local Vite development server and supports hot module replacement.
+
+## Available Scripts
+
+```bash
+pnpm dev      # Start development server
+pnpm build    # Build production output into dist/
+pnpm preview  # Preview production build locally
+pnpm lint     # Run ESLint checks
+```
+
+## Production Build
+
+```bash
+pnpm build
+```
+
+The generated production files are placed in the dist folder.
+
+## Deployment (Firebase Hosting)
+
+This project is configured to deploy the dist output directory via Firebase Hosting.
+
+Current hosting config includes:
+- public directory: dist
+- SPA rewrite: all routes redirected to index.html
+
+Typical deployment flow:
+
+```bash
+pnpm build
+firebase deploy
+```
+
+If Firebase CLI is not installed:
+
+```bash
+npm install -g firebase-tools
+firebase login
+```
+
+## Content Customization
+
+Update portfolio content in these folders:
+
+- src/data for skills, experience, education, and projects
+- src/components for section layout and UI behavior
+- src/assets for icons, images, and SVGs
+
+## License
+
+This project is intended for personal portfolio use.

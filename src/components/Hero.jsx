@@ -33,9 +33,7 @@ function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="mx-auto max-w-3xl text-center"
         >
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-cyan-300/80">
-            Software Engineer Portfolio
-          </p>
+         
           <h1 className="font-display text-4xl font-extrabold leading-tight text-white sm:text-6xl">
             <span className="gradient-text">Salinda Yasas</span>
             <br />

@@ -23,14 +23,14 @@ function About() {
             <div className="flex h-56 items-center justify-center rounded-2xl bg-slate-900 text-center sm:h-full">
               <div>
                 <p className="font-display text-4xl font-bold gradient-text">SY</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+                <p className="mt-2 text-sm uppercase tracking-[0.18em] text-slate-300">
                   Profile Placeholder
                 </p>
               </div>
             </div>
           </motion.div>
 
-          <div className="space-y-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+          <div className="space-y-4 text-base leading-relaxed text-slate-200 sm:text-lg">
             <p>
               I am a passionate and hardworking software engineer who enjoys learning
               new technologies and building efficient software solutions. I focus on
