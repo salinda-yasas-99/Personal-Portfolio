@@ -46,17 +46,13 @@ function Hero() {
             problems through clean, efficient code and modern software architecture.
           </p>
 
-          <ul className="mt-6 space-y-2 text-sm text-slate-300">
-            <li>
-              Experience with ASP.NET Core, Spring Boot, and modern JavaScript
-              frameworks
-            </li>
-            <li>Backend development, full-stack development, and cloud services</li>
-            <li>
-              Graduate of B.Sc. (Hons) in Information Technology - University of
-              Moratuwa
-            </li>
-          </ul>
+          <p className="mt-6 text-sm text-slate-300">
+            I specialize in architecting robust, scalable applications across the full stack. 
+            Leveraging ASP.NET Core, Spring Boot,Express js and modern JavaScript frameworks, 
+            I deliver comprehensive end-to-end solutions. Backed by a B.Sc. (Hons) in Information Technology 
+            from the University of Moratuwa, my expertise combines deep backend engineering with hands-on cloud 
+            service integration.
+          </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <GradientButton href="#projects">View My Projects</GradientButton>

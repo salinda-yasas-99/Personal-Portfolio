@@ -42,10 +42,7 @@ function About() {
               Azure, and Firebase, and I enjoy collaborating with teams to deliver
               reliable and high-quality software.
             </p>
-            <p>
-              Currently, I work as a Software Engineer at Sitecore, developing
-              enterprise solutions using Microsoft technologies.
-            </p>
+           
             <p>
               My goal is to continue growing as a software engineer while
               contributing to impactful and innovative software products.
