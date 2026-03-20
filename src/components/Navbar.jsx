@@ -22,6 +22,18 @@ function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleMobileNavClick = (event, href) => {
+    event.preventDefault()
+    setIsOpen(false)
+
+    const target = document.querySelector(href)
+    if (!target) return
+
+    window.requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+  }
+
   return (
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
@@ -90,7 +102,7 @@ function Navbar() {
                     <a
                       href={item.href}
                       className="block rounded-lg px-3 py-2.5 text-sm text-slate-300 transition hover:bg-slate-800/70 hover:text-cyan-300"
-                      onClick={() => setIsOpen(false)}
+                      onClick={(event) => handleMobileNavClick(event, item.href)}
                     >
                       {item.label}
                     </a>
