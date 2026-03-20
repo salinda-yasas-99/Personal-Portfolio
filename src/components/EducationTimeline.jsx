@@ -13,7 +13,7 @@ function EducationTimeline() {
         />
 
         <div className="relative mx-auto max-w-4xl">
-          <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-cyan-400/70 via-indigo-500/60 to-cyan-400/70 md:left-1/2" />
+          <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-cyan-400/70 via-emerald-500/60 to-cyan-400/70 md:left-1/2" />
 
           <div className="space-y-8">
             {educationData.map((item, index) => {
@@ -32,7 +32,7 @@ function EducationTimeline() {
                   <span
                     className={`absolute left-[9px] top-7 h-3 w-3 rounded-full shadow-[0_0_14px_rgba(129,140,248,0.75)] ${
                       isLeft
-                        ? 'bg-indigo-300 md:left-auto md:right-[-6px]'
+                        ? 'bg-emerald-300 md:left-auto md:right-[-6px]'
                         : 'bg-cyan-300 md:left-[-6px]'
                     }`}
                   />
@@ -44,7 +44,7 @@ function EducationTimeline() {
                     <h3 className="mt-2 font-display text-lg font-semibold text-white sm:text-xl">
                       {item.title}
                     </h3>
-                    <p className="mt-1 text-sm font-medium text-indigo-300">{item.institution}</p>
+                    <p className="mt-1 text-sm font-medium text-emerald-300">{item.institution}</p>
                     {item.details.length ? (
                       <ul className="mt-4 space-y-2 text-sm text-slate-300">
                         {item.details.map((detail) => (

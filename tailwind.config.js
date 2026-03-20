@@ -4,18 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: '#05070d',
-        panel: '#0b1020',
+        base: '#020202',
+        panel: '#0a0a0a',
       },
       fontFamily: {
         sans: ['Space Grotesk', 'sans-serif'],
         display: ['Sora', 'sans-serif'],
       },
       boxShadow: {
-        glow: '0 0 0 1px rgba(56, 189, 248, 0.15), 0 10px 30px rgba(59, 130, 246, 0.18)',
+        glow: '0 0 0 1px rgba(16, 185, 129, 0.2), 0 10px 30px rgba(8, 145, 178, 0.2)',
       },
       backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at 20% 20%, rgba(129, 140, 248, 0.25), transparent 40%), radial-gradient(circle at 75% 30%, rgba(56, 189, 248, 0.2), transparent 36%), radial-gradient(circle at 50% 90%, rgba(147, 51, 234, 0.2), transparent 40%)',
+        'hero-gradient': 'radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.06), transparent 42%), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.04), transparent 40%), linear-gradient(180deg, #000000 0%, #050505 45%, #000000 100%)',
       },
       keyframes: {
         float: {

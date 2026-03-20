@@ -40,7 +40,7 @@ function Footer() {
           {/* Brand + bio */}
           <div>
             <h3 className="gradient-text font-display text-2xl font-bold">Salinda Yasas</h3>
-            <p className="mt-1 text-sm font-semibold text-indigo-300">Software Engineer</p>
+            <p className="mt-1 text-sm font-semibold text-emerald-300">Software Engineer</p>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Passionate software engineer focused on building scalable backend systems,
               REST APIs, and full-stack web applications using modern technologies.
@@ -71,7 +71,7 @@ function Footer() {
                     href={link.href}
                     className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-cyan-300"
                   >
-                    <span className="text-indigo-400">→</span>
+                    <span className="text-emerald-400">→</span>
                     {link.label}
                   </a>
                 </li>
@@ -99,7 +99,7 @@ function Footer() {
                 href="https://drive.google.com/file/d/1US_z2bLG_ku5vFsw2013mOyqLyfnaVCz/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-5 py-2.5 text-sm font-medium text-cyan-200 transition hover:bg-cyan-400/20 hover:text-white"
+                className="inline-flex items-center gap-2 rounded-xl border border-emerald-400/40 bg-emerald-400/10 px-5 py-2.5 text-sm font-medium text-emerald-200 transition hover:bg-emerald-400/20 hover:text-white"
               >
                 ↓ Download Resume
               </a>

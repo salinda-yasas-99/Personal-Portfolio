@@ -13,7 +13,7 @@ function ExperienceTimeline() {
         />
 
         <div className="relative mx-auto max-w-5xl">
-          <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-indigo-500/70 via-cyan-400/60 to-indigo-500/70 md:left-1/2" />
+          <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-emerald-500/70 via-cyan-400/60 to-emerald-500/70 md:left-1/2" />
 
           <div className="space-y-8">
             {experienceData.map((item, index) => {
@@ -33,7 +33,7 @@ function ExperienceTimeline() {
                     className={`absolute left-[9px] top-7 h-3 w-3 rounded-full shadow-[0_0_14px_rgba(34,211,238,0.8)] ${
                       isLeft
                         ? 'bg-cyan-300 md:left-auto md:right-[-6px]'
-                        : 'bg-indigo-300 md:left-[-6px]'
+                        : 'bg-emerald-300 md:left-[-6px]'
                     }`}
                   />
 
@@ -44,7 +44,7 @@ function ExperienceTimeline() {
                     <h3 className="mt-2 font-display text-xl font-semibold text-white">
                       {item.role}
                     </h3>
-                    <p className="mt-1 text-sm font-medium text-indigo-300">{item.company}</p>
+                    <p className="mt-1 text-sm font-medium text-emerald-300">{item.company}</p>
                     <ul className="mt-4 space-y-2 text-sm text-slate-300">
                       {item.points.map((point) => (
                         <li key={point}>- {point}</li>

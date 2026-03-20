@@ -55,7 +55,7 @@ function Navbar() {
             href="https://drive.google.com/file/d/1US_z2bLG_ku5vFsw2013mOyqLyfnaVCz/preview"
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-1.5 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:bg-cyan-400/20 hover:text-white md:flex"
+            className="hidden items-center gap-1.5 rounded-xl border border-emerald-400/40 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:bg-emerald-400/20 hover:text-white md:flex"
           >
             ↓ Resume
           </a>
@@ -101,7 +101,7 @@ function Navbar() {
                     href="https://drive.google.com/file/d/1US_z2bLG_ku5vFsw2013mOyqLyfnaVCz/preview"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white"                
+                    className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white"                
                   >
                     ↓ View Resume
                   </a>

@@ -36,7 +36,7 @@ function ProjectModal({ project, onClose }) {
 
       {/* Panel */}
       <motion.div
-        className="relative z-10 my-4 w-full max-w-2xl overflow-hidden rounded-3xl border border-slate-700/80 bg-[#0b1020] shadow-[0_0_80px_rgba(59,130,246,0.22)]"
+        className="relative z-10 my-4 w-full max-w-2xl overflow-hidden rounded-3xl border border-slate-700/80 bg-[#07171a] shadow-[0_0_80px_rgba(16,185,129,0.2)]"
         initial={{ opacity: 0, scale: 0.92, y: 32 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 18 }}
@@ -91,7 +91,7 @@ function ProjectModal({ project, onClose }) {
               <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">
                 {project.name}
               </h2>
-              <p className="mt-1 text-sm font-semibold text-cyan-300">{project.role}</p>
+              <p className="mt-1 text-sm font-semibold text-emerald-300">{project.role}</p>
             </div>
             <div className="flex flex-wrap gap-2">
               <GradientButton href={project.github} variant="secondary">
@@ -117,7 +117,7 @@ function ProjectModal({ project, onClose }) {
             <ul className="space-y-2.5">
               {project.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-2.5 text-sm text-slate-300">
-                  <span className="mt-0.5 shrink-0 text-cyan-400">▸</span>
+                  <span className="mt-0.5 shrink-0 text-emerald-400">▸</span>
                   {feature}
                 </li>
               ))}
@@ -133,7 +133,7 @@ function ProjectModal({ project, onClose }) {
               {project.tech.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-xl border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-200"
+                  className="rounded-xl border border-emerald-400/35 bg-emerald-500/10 px-3 py-1.5 text-xs font-semibold text-emerald-200"
                 >
                   {tech}
                 </span>

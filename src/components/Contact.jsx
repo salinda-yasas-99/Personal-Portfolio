@@ -44,7 +44,7 @@ function Contact() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="glass-panel flex items-center gap-3 rounded-xl p-3 transition hover:border-cyan-400/40"
+                  className="glass-panel flex items-center gap-3 rounded-xl p-3 transition hover:border-emerald-400/40"
                 >
                   <img src={item.icon} alt={`${item.label} icon`} className="h-5 w-5" />
                   <div>
@@ -67,21 +67,21 @@ function Contact() {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-emerald-400/50"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-emerald-400/50"
             />
             <textarea
               rows="5"
               placeholder="Your Message"
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-cyan-400/50"
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-200 outline-none transition focus:border-emerald-400/50"
             />
             <button
               type="button"
-              className="w-full rounded-xl bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:shadow-[0_0_26px_rgba(59,130,246,0.35)]"
+              className="w-full rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:shadow-[0_0_26px_rgba(16,185,129,0.35)]"
             >
               Send Message
             </button>

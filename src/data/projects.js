@@ -15,7 +15,7 @@ export const projectsData = [
     ],
     github: '#',
     demo: '#',
-    coverGradient: 'from-violet-600 via-indigo-600 to-blue-600',
+    coverGradient: 'from-emerald-600 via-teal-600 to-cyan-600',
   },
   {
     name: 'Innov8 HRM',
@@ -33,7 +33,7 @@ export const projectsData = [
     ],
     github: '#',
     demo: '#',
-    coverGradient: 'from-cyan-600 via-blue-600 to-indigo-600',
+    coverGradient: 'from-cyan-600 via-teal-600 to-emerald-600',
   },
   {
     name: 'Web Safe',
@@ -69,7 +69,7 @@ export const projectsData = [
     ],
     github: '#',
     demo: '#',
-    coverGradient: 'from-sky-600 via-blue-600 to-indigo-700',
+    coverGradient: 'from-sky-600 via-cyan-600 to-teal-700',
   },
   {
     name: 'Book Selling Platform',
@@ -105,6 +105,6 @@ export const projectsData = [
     ],
     github: '#',
     demo: '#',
-    coverGradient: 'from-fuchsia-600 via-purple-600 to-indigo-600',
+    coverGradient: 'from-teal-600 via-cyan-600 to-emerald-600',
   },
 ]

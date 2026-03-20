@@ -62,7 +62,7 @@ function Projects() {
                   {project.tech.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-lg border border-indigo-400/35 bg-slate-800/70 px-2.5 py-1 text-xs text-slate-200"
+                      className="rounded-lg border border-emerald-400/35 bg-slate-800/70 px-2.5 py-1 text-xs text-slate-200"
                     >
                       {tech}
                     </span>

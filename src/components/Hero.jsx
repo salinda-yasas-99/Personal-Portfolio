@@ -15,7 +15,7 @@ function Hero() {
   return (
     <section id="home" className="relative overflow-hidden section-wrap">
       <motion.div
-        className="pointer-events-none absolute -left-20 top-28 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl"
+        className="pointer-events-none absolute -left-20 top-28 h-72 w-72 rounded-full bg-emerald-500/20 blur-3xl"
         animate={{ y: [0, -18, 0], x: [0, 10, 0] }}
         transition={{ duration: 8, repeat: Infinity }}
       />

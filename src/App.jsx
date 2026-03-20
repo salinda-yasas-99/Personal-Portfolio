@@ -28,12 +28,12 @@ function ScrollToTopButton() {
       {isVisible && (
         <motion.button
           type="button"
-          className="fixed bottom-6 right-4 z-50 rounded-full border border-cyan-400/40 bg-slate-900/85 px-4 py-2 text-sm font-semibold text-cyan-200 shadow-glow backdrop-blur transition hover:scale-105 hover:text-white sm:right-8"
+          className="fixed bottom-6 right-4 z-50 rounded-full border border-emerald-400/40 bg-slate-900/85 px-4 py-2 text-sm font-semibold text-emerald-200 shadow-glow backdrop-blur transition hover:scale-105 hover:text-white sm:right-8"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 12 }}
-          whileHover={{ boxShadow: '0 0 24px rgba(34, 211, 238, 0.3)' }}
+          whileHover={{ boxShadow: '0 0 24px rgba(16, 185, 129, 0.3)' }}
           aria-label="Scroll to top"
         >
           Top
