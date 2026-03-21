@@ -4,6 +4,7 @@ import GithubIcon from '../assets/svgs/github.svg'
 import LinkedinIcon from '../assets/svgs/linkedin.svg'
 import MediumIcon from '../assets/svgs/medium.svg'
 import WebsiteIcon from '../assets/svgs/website.svg'
+import ProfileImage from '../assets/images/profile img.jpg'
 
 const socialLinks = [
   { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/salinda-yasas-99' },
@@ -32,6 +33,19 @@ function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="mx-auto max-w-3xl text-center"
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.05, ease: 'easeOut' }}
+            className="mx-auto mb-6 h-28 w-28 overflow-hidden rounded-full border border-emerald-400/45 shadow-[0_0_35px_rgba(16,185,129,0.22)] sm:mb-8 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-52 lg:w-52"
+          >
+            <img
+              src={ProfileImage}
+              alt="Salinda Yasas profile"
+              className="h-full w-full object-cover"
+            />
+          </motion.div>
+
          
           <h1 className="font-display text-4xl font-extrabold leading-tight text-white sm:text-6xl">
             <span className="gradient-text">Salinda Yasas</span>
