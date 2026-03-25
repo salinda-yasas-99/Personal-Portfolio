@@ -81,7 +81,7 @@ function Projects() {
                   <GradientButton href={project.github} variant="secondary">
                     GitHub
                   </GradientButton>
-                  <GradientButton href={project.demo}>Live Demo</GradientButton>
+                  {/* <GradientButton href={project.demo}>Live Demo</GradientButton> */}
                   <button
                     type="button"
                     className="ml-auto rounded-lg border border-cyan-400/35 px-3 py-1.5 text-xs font-medium text-cyan-300 transition hover:bg-cyan-400/10"

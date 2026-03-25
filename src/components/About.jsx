@@ -30,7 +30,7 @@ function About() {
             </div>
           </motion.div>
 
-          <div className="space-y-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+          <div className="space-y-4 text-sm leading-relaxed !text-white sm:text-base">
             <p>
               I am a passionate and hardworking software engineer who enjoys learning
               new technologies and building efficient software solutions. I focus on
@@ -42,7 +42,6 @@ function About() {
               Azure, and Firebase, and I enjoy collaborating with teams to deliver
               reliable and high-quality software.
             </p>
-           
             <p>
               My goal is to continue growing as a software engineer while
               contributing to impactful and innovative software products.

@@ -97,7 +97,7 @@ function ProjectModal({ project, onClose }) {
               <GradientButton href={project.github} variant="secondary">
                 GitHub
               </GradientButton>
-              <GradientButton href={project.demo}>Live Demo</GradientButton>
+              {/* <GradientButton href={project.demo}>Live Demo</GradientButton> */}
             </div>
           </div>
 
