@@ -10,7 +10,7 @@ const particles = Array.from({ length: 16 }, (_, index) => ({
 function SpectacularLoader() {
   return (
     <motion.div
-      className="fixed inset-0 z-[120] overflow-hidden bg-[#020202]"
+      className="fixed inset-0 z-[120] min-h-dvh overflow-hidden bg-[#020202]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
       aria-label="Loading portfolio"
@@ -44,7 +44,7 @@ function SpectacularLoader() {
         />
       ))}
 
-      <div className="relative z-10 flex h-full items-center justify-center px-5">
+      <div className="relative z-10 grid min-h-dvh place-items-center px-5">
         <div className="w-full max-w-xl text-center">
           <div className="relative mx-auto mb-10 h-44 w-44 sm:h-48 sm:w-48">
             <motion.div
@@ -81,10 +81,6 @@ function SpectacularLoader() {
           >
             Initializing Experience
           </motion.p>
-
-          <p className="mt-2 text-sm uppercase tracking-[0.24em] text-slate-300 sm:text-base">
-            Full Stack Portfolio
-          </p>
 
           <div className="mx-auto mt-8 h-1.5 w-64 overflow-hidden rounded-full bg-slate-700/70 sm:w-72">
             <motion.div
