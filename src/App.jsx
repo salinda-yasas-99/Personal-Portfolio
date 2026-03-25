@@ -10,6 +10,7 @@ import EducationTimeline from './components/EducationTimeline'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import SpectacularLoader from './components/SpectacularLoader'
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -44,22 +45,50 @@ function ScrollToTopButton() {
 }
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const timeoutId = window.setTimeout(() => {
+      setIsLoading(false)
+    }, 2600)
+
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      window.clearTimeout(timeoutId)
+      document.body.style.overflow = ''
+    }
+  }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = isLoading ? 'hidden' : ''
+  }, [isLoading])
+
   return (
-    <div className="bg-mesh min-h-screen text-slate-200">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <WhatIDo />
-        <Skills />
-        <ExperienceTimeline />
-        <EducationTimeline />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollToTopButton />
-    </div>
+    <>
+      <AnimatePresence mode="wait">{isLoading && <SpectacularLoader />}</AnimatePresence>
+
+      <motion.div
+        className="bg-mesh min-h-screen text-slate-200"
+        initial={{ opacity: 0, y: 22 }}
+        animate={{ opacity: isLoading ? 0 : 1, y: isLoading ? 22 : 0 }}
+        transition={{ duration: 0.65, ease: 'easeOut' }}
+      >
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <WhatIDo />
+          <Skills />
+          <ExperienceTimeline />
+          <EducationTimeline />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+        <ScrollToTopButton />
+      </motion.div>
+    </>
   )
 }
 
